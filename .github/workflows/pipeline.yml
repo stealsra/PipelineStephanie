@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Baixar o código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Instalar o Python
         uses: actions/setup-python@v7
@@ -61,7 +61,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
        - name: Baixar o código
-         uses: actions/checkout@v4
+         uses: actions/checkout@v7
 
        - name: Instalar o Python
          uses: actions/setup-python@v4
@@ -88,7 +88,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Baixar o código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Verificar dependências
         uses: actions/dependency-review-action@v4
