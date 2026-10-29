@@ -30,7 +30,7 @@ jobs:
       - name: Rodar os testes
         run: python -m pytest -v
 
-          codeql:
+  codeql:
     name: CodeQL (análise do código)
     runs-on: ubuntu-latest
     permissions:
