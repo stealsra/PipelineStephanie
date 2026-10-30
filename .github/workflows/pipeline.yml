@@ -56,7 +56,7 @@ jobs:
           total=$(jq -s '[.[].runs[] | (.results // [])[]] | length' sarif-results/*.sarif)
           echo "Problemas encontrados pelo CodeQL: $total"
           if [ "$total" -gt 0 ]; then exit 1; fi
-    segredos:
+  segredos:
       name: Busca de segredos
       runs-on: ubuntu-latest
       steps:
